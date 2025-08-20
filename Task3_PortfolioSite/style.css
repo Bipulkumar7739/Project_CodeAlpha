@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1ebeb;
+  color: #222;
+}
+
+.contenar {
+  width: 92%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 21px;
+}
+
+header {
+  background: #36a813;
+  color: #fff9f9;
+  padding: 38px 0;
+  text-align: center;
+}
+
+.section {
+  margin: 40px 0;
+  background: #fff;
+  padding: 20px;
+  border-radius: 11px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 3px solid #003366;
+}
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.skills-list li {
+  background: #e0ecff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project-card {
+  margin: 15px 0;
+  padding: 15px;
+  background: #f0f8ff;
+  border-left: 5px solid #003366;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background:black;
+  color: whitesmoke;
+}
