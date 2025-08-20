@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bipul Image Gallerys</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="koya-wrap" id="app">
+    <header class="koya-head">
+      <div>
+        <h1>Bipul Image Gallery</h1>
+      </div>
+
+      <div class="controls">
+        <div class="filter-row">
+          <div class="filters">
+            <input type="radio" id="cat-all" name="category" value="all" checked>
+            <label for="cat-all">All</label>
+
+            <input type="radio" id="cat-nature" name="category" value="nature">
+            <label for="cat-nature">Natures</label>
+
+            <input type="radio" id="cat-arch" name="category" value="architecture">
+            <label for="cat-arch">Architectur</label>
+
+            <input type="radio" id="cat-people" name="category" value="people">
+            <label for="cat-people">Peoples</label>
+          </div>
+
+          <div class="filters-select">
+            <label for="img-filter">Effects</label>
+            <select id="img-filter">
+              <option value="none">None</option>
+              <option value="grayscale(100%)">Grayscales</option>
+              <option value="sepia(60%)">Sepia</option>
+              <option value="contrast(120%)">High contrasts</option>
+              <option value="blur(2px)">Soft blur</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn ghost" id="shuffleBtn">Shuffl</button>
+        <button class="btn" id="addPlaceholder">Add Image</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="koya-grid" id="gallery"></section>
+    </main>
+  </div>
+  <div class="kb-modal" id="lightbox">
+    <div class="kb-inner">
+      <div class="kb-imgWrap">
+        <img src="" alt="" class="kb-img" id="kbImg">
+      </div>
+      <aside class="kb-side">
+        <div class="kb-title" id="kbTitle">Title</div>
+        <div class="kb-desc" id="kbDesc">Description</div>
+        <div class="kb-controls">
+          <button class="icon-btn" id="prevBtn">← Prev</button>
+          <button class="icon-btn" id="nextBtn">Next →</button>
+          <button class="icon-btn" id="downloadBtn">Download</button>
+        </div>
+      </aside>
+
+      <div class="kb-nav">
+        <button id="navPrev">◀</button>
+        <button id="navNext">▶</button>
+      </div>
+      <button class="kb-close" id="closeLb">✕</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
